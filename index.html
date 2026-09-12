@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>3D Fractal Playground</title>
+    <meta name="description" content="An accessible 3D fractal playground. Turn knobs, watch the shape change." />
+  </head>
+  <body>
+    <div id="app">
+      <main id="viewer">
+        <canvas
+          id="gl"
+          tabindex="0"
+          aria-label="3D fractal viewer. Drag to orbit. Scroll to zoom."
+        ></canvas>
+        <div id="hud" class="hud">
+          <div id="hud-name">Loading…</div>
+          <div id="hud-stats">
+            <span id="fps">-- fps</span>
+            ·
+            <span id="quality">Q 100%</span>
+          </div>
+        </div>
+        <p id="viewer-hint">Drag to look around · Scroll to zoom · ← → change shape</p>
+      </main>
+      <aside id="controls" aria-label="Fractal controls"></aside>
+      <footer id="equation-bar" aria-label="Custom equation"></footer>
+    </div>
+    <div id="tip-pop" role="tooltip" hidden></div>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

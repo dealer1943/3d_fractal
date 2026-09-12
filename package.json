@@ -1,0 +1,18 @@
+{
+  "name": "fractal-playground",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "engines": {
+    "node": ">=18 <21"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "node scripts/check.mjs"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0"
+  }
+}
